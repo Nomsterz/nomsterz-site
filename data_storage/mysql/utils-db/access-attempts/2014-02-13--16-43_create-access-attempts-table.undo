@@ -1,0 +1,16 @@
+-- Author                   :   Chukky Nze
+-- Company                  :   NotaryToolz.com
+-- Email                    :   chukkynze@notarytoolz.com
+-- Date                     :   2/13/14 4:43 PM
+-- Description              :   Drop the table to monitor access into the application (login, signup, forgot, etc)
+-- Database                 :   notrytlz_utils
+-- Table                    :   access_attempt
+-- Actual Script provided   :   2014-02-13--16-43_create-access-attempts-table.sql
+
+START TRANSACTION;
+
+DROP TABLE IF EXISTS notrytlz_utils.access_attempt;
+
+COMMIT;
+
+-- EOF

@@ -1,0 +1,104 @@
+<?php
+/**
+ * Local Configuration Override
+ *
+ * This configuration override file is for overriding environment-specific and
+ * security-sensitive configuration information. Copy this file without the
+ * .dist extension at the end and populate values as needed.
+ *
+ * @NOTE: This file is ignored from Git by default with the .gitignore included
+ * in ZendSkeletonApplication. This is a good practice, as it prevents sensitive
+ * credentials from accidentally being committed into version control.
+ */
+
+return  array
+        (
+            'db'                =>  array
+                                    (
+                                        'adapters'  =>  array
+                                                        (
+                                                            /**
+                                                             * Main Database
+                                                             */
+                                                            'main-db'       =>  array
+                                                                                (
+                                                                                    'driver'    =>  'pdo',
+                                                                                    'dsn'       =>  'mysql:dbname=nomsterz_db;host=localhost',
+                                                                                    'username'  =>  'nomsterz_dba',
+                                                                                    'password'  =>  '~1aDo1q#s}K+',
+                                                                                ),
+
+                                                            /**
+                                                             * Utilities Database
+                                                             */
+                                                            'utils-db'      =>  array
+                                                                                (
+                                                                                    'driver'    =>  'pdo',
+                                                                                    'dsn'       =>  'mysql:dbname=nomsterz_utils;host=localhost',
+                                                                                    'username'  =>  'nomsterz_dba',
+                                                                                    'password'  =>  '~1aDo1q#s}K+',
+                                                                                ),
+
+                                                            /**
+                                                             * Legal Database
+                                                             */
+                                                            'legal-db'      =>  array
+                                                                                (
+                                                                                    'driver'    =>  'pdo',
+                                                                                    'dsn'       =>  'mysql:dbname=nomsterz_legal;host=localhost',
+                                                                                    'username'  =>  'nomsterz_dba',
+                                                                                    'password'  =>  '~1aDo1q#s}K+',
+                                                                                ),
+                                                        )
+                                    ),
+            'encryptionKeys'    =>  array
+                                    (
+                                        'Nomsterz'              =>  array
+                                                                    (
+                                                                        'siteSalt'      =>  '9The8Lord7Is6My5Shepherd4I3Shall2Not1Want0',
+                                                                        'formCSRFSalt'  =>  '9The8Lord7Is6My5Shepherd4I3Shall2Not1Want0',
+                                                                    ),
+                                        /* Production
+                                        'reCaptcha'             =>  array
+                                                                    (
+                                                                        'name'          =>  'nomsterz.com',
+                                                                        'publicKey'     =>  '6Lfkl-4SAAAAAErmK73oYGLhcnwVHaPfaVe3EB8L',
+                                                                        'privateKey'    =>  '6Lfkl-4SAAAAAAcPNiDJhEKqHjo7GyYo7HwKZLtU',
+                                                                    ),
+                                        */
+                                        'reCaptcha'             =>  array
+                                                                    (
+                                                                        'name'          =>  'nomsterz.com',
+                                                                        'publicKey'     =>  '6Ldzme4SAAAAAKVnu0En5ZaAvgRCmb8GebSR_ICv',
+                                                                        'privateKey'    =>  '6Ldzme4SAAAAAIWvKVI_AF1CTzMfgKk8KyfcWKvB',
+                                                                    ),
+                                    ),
+            'emailOptions'      =>  array
+                                    (
+                                        'smtpOptions'           =>  array
+                                                                    (
+                                                                        'host'              =>  'mail.nomsterz.com',
+                                                                        'port'              =>  25,
+                                                                        'connection_class'  =>  'login',
+                                                                        'connection_config' =>  array
+                                                                                                (
+                                                                                                    'username'      =>  'info@nomsterz.com',
+                                                                                                    'password'      =>  'Info@1DaySoon',
+                                                                                                    'ssl'           =>  'tls',
+                                                                                                ),
+                                                                    ),
+                                        'FromEmailAddresses'    =>  array
+                                                                    (
+                                                                        'General'   			=>  array
+																									(
+																										'email'         =>  'info@nomsterz.com',
+																										'senderName'    =>  'Nomsterz',
+																									),
+                                                                        'Customer Service'   	=>  array
+																									(
+																										'email'         =>  'customerservice@nomsterz.com',
+																										'senderName'    =>  'Nomsterz Customer Service',
+																									),
+                                                                    ),
+                                    )
+        );

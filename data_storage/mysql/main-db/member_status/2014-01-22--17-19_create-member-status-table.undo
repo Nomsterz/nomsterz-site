@@ -1,0 +1,16 @@
+-- Author                   :   Chukky Nze
+-- Company                  :   NotaryToolz.com
+-- Email                    :   chukkynze@gmail.com
+-- Date                     :   1/22/14 5:19 PM
+-- Description              :   Creates the member status table
+-- Database                 :   notrytlz_db
+-- Table                    :   member_status
+-- Actual Script provided   :   2014-01-22--17-19_create-member-status-table.sql
+
+START TRANSACTION;
+
+DROP TABLE IF EXISTS notrytlz_db.member_status;
+
+COMMIT;
+
+-- EOF

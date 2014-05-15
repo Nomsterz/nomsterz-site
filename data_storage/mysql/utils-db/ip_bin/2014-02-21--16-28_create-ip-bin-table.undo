@@ -1,0 +1,18 @@
+-- Author                   :   Chukky Nze
+-- Company                  :   NotaryToolz.com
+-- Email                    :   chukkynze@notarytoolz.com
+-- Date                     :   2/21/14 4:41 PM
+-- Description              :   Holds IP Addresses we are "interested" in
+-- Database                 :   notrytlz_utils
+-- Table                    :   ip_bin
+-- Actual Script provided   :   2014-02-21--16-28_create-ip-bin-table.sql
+
+START TRANSACTION
+;
+
+DROP TABLE IF EXISTS notrytlz_utils.ip_bin;
+
+COMMIT
+;
+
+-- EOF

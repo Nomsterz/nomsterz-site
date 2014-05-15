@@ -1,0 +1,16 @@
+-- Author                   :   Chukky Nze
+-- Company                  :   NotaryToolz.com
+-- Email                    :   chukkynze@gmail.com
+-- Date                     :   1/7/14 2:17 PM
+-- Description              :   Creates the pagehit table
+-- Database                 :   notrytlz_db
+-- Table                    :   pagehit
+-- Undo Script provided     :   2014-01-07--14-17_create-pagehit-table.undo
+
+START TRANSACTION;
+
+DROP TABLE IF EXISTS notrytlz_db.pagehit;
+
+COMMIT;
+
+-- EOF

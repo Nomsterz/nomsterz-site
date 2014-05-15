@@ -1,0 +1,16 @@
+-- Author                   :   Chukky Nze
+-- Company                  :   notrytlz_db.com
+-- Email                    :   chukkynze@notarytoolz.com
+-- Date                     :   1/30/14 7:13 PM
+-- Description              :   EnterDescriptionHere
+-- Database                 :   notrytlz_db
+-- Table                    :   EnterTableNamesHere
+-- Actual Script provided   :   2014-01-30--19-13_create-member-details-table.sql
+
+START TRANSACTION;
+
+DROP TABLE IF EXISTS notrytlz_db.member_details;
+
+COMMIT;
+
+-- EOF
