@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
+-- Company                  :   Nomsterz.com
 -- Email                    :   chukkynze@gmail.com
 -- Date                     :   1/22/14 5:19 PM
 -- Description              :   Drops the member status table
--- Database                 :   notrytlz_db
+-- Database                 :   nomsterz_db
 -- Table                    :   member_status
 -- Actual Script provided   :   2014-01-22--17-19_create-member-status-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_db.member_status;
+DROP TABLE IF EXISTS nomsterz_db.member_status;
 
-CREATE TABLE notrytlz_db.member_status
+CREATE TABLE nomsterz_db.member_status
 (
   id 						int(16) NOT NULL AUTO_INCREMENT,
   member_id 				int(16) NOT NULL,

@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
+-- Company                  :   Nomsterz.com
 -- Email                    :   chukkynze@gmail.com
 -- Date                     :   1/7/14 2:17 PM
 -- Description              :   Creates the pagehit table
--- Database                 :   notrytlz_db
+-- Database                 :   nomsterz_db
 -- Table                    :   pagehit
 -- Undo Script provided     :   2014-01-07--14-17_create-pagehit-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_db.pagehit;
+DROP TABLE IF EXISTS nomsterz_db.pagehit;
 
-CREATE TABLE notrytlz_db.pagehit
+CREATE TABLE nomsterz_db.pagehit
 (
 	`id` 									int(11) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` 						int(16) unsigned DEFAULT 0,

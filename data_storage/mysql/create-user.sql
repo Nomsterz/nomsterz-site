@@ -8,11 +8,11 @@
 
 START TRANSACTION;
 
-CREATE USER 'notrytlz_dba'@'localhost' IDENTIFIED BY '~1aDo1q#s}K+';
-GRANT ALL PRIVILEGES ON * . * TO 'notrytlz_dba'@'localhost';
+CREATE USER 'nomsterz_dba'@'localhost' IDENTIFIED BY 'Q4qWrq_a!.tf;lCR3Z';
+GRANT ALL PRIVILEGES ON * . * TO 'nomsterz_dba'@'localhost';
 
-CREATE USER 'notrytlz_dba'@'*' IDENTIFIED BY '~1aDo1q#s}K+';
-GRANT ALL PRIVILEGES ON * . * TO 'notrytlz_dba'@'*';
+CREATE USER 'nomsterz_dba'@'*' IDENTIFIED BY 'Q4qWrq_a!.tf;lCR3Z';
+GRANT ALL PRIVILEGES ON * . * TO 'nomsterz_dba'@'*';
 
 COMMIT;
 

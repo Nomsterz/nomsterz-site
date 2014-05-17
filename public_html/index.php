@@ -1,4 +1,16 @@
 <?php
+defined('APPLICATION_ENV') || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
+
+switch(APPLICATION_ENV)
+{
+	case 'local'		:	define('BASE_PATH', 'http://local.nomsterz.com'); break;
+	case 'development'	:	define('BASE_PATH', 'http://local.nomsterz.com'); break;
+	case 'testing'		:	define('BASE_PATH', 'http://unit-test.nomsterz.com'); break;
+	case 'staging'		:	define('BASE_PATH', 'http://staging.nomsterz.com'); break;
+	case 'optimization'	:	define('BASE_PATH', 'http://faster.nomsterz.com'); break;
+
+	default	:	define('BASE_PATH', 'http://www.nomsterz.com');
+}
 /**
  * This makes our life easier when dealing with paths. Everything is relative
  * to the application root now.

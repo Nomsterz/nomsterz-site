@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
+-- Company                  :   Nomsterz.com
 -- Email                    :   chukkynze@gmail.com
 -- Date                     :   1/7/14 2:17 PM
 -- Description              :   Creates the faqhit table
--- Database                 :   notrytlz_utils
+-- Database                 :   nomsterz_utils
 -- Table                    :   faqhit
 -- Undo Script provided     :   2014-01-15--22-17_create-faq-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_utils.faqhit;
+DROP TABLE IF EXISTS nomsterz_utils.faqhit;
 
-CREATE TABLE notrytlz_utils.faqhit
+CREATE TABLE nomsterz_utils.faqhit
 (
   `id` 						int(16) unsigned NOT NULL AUTO_INCREMENT,
   `faq_id` 				int(16) unsigned NOT NULL ,

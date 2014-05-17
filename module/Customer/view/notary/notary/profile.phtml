@@ -1,0 +1,458 @@
+<?php
+$ProfileForm->prepare();
+?>
+<!-- Profile Config MODAL FORM-->
+<div class="modal fade" id="ProfileBoxConfig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		  		<h4 class="modal-title"><i class="fa fa-user"></i> Edit Profile Form</h4>
+			</div>
+			<div class="modal-body">
+		  		<?php
+					echo $this->form()->openTag($ProfileForm);
+					echo $this->formHidden($ProfileForm->get('profile_csrf'));
+				?>
+
+				<h3>What do you want to be called?</h3>
+					<dl class="dl-horizontal font-16" style="margin-bottom: 40px;">
+						<dt>Prefix</dt>				<dd id="ProfileFormPrefixDDtag" class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('prefix')); ?></dd>
+						<dt>First Name</dt>			<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('first_name')); ?></dd>
+						<dt>1st Middle Name</dt>	<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('mid_name1')); ?></dd>
+						<dt>2nd Middle Name</dt>	<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('mid_name2')); ?></dd>
+						<dt>Last Name</dt>			<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('last_name')); ?></dd>
+						<dt>Display Name</dt>		<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('display_name')); ?></dd>
+						<dt>Suffix</dt>				<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('suffix')); ?></dd>
+					</dl>
+
+				<h3>Are you an adult?</h3>
+					<dl class="dl-horizontal font-16" style="margin-bottom: 40px;">
+						<dt>Birth Date</dt>			<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('birth_date')); ?></dd>
+						<dt>Gender</dt>				<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('gender')); ?></dd>
+					</dl>
+
+				<h3>Tell us about yourself.</h3>
+					<dl class="dl-horizontal font-16" style="margin-bottom: 40px;">
+						<dt>Personal Summary</dt>	<dd class="modalDDtag">
+														<div class="form-group">
+															<?php echo $this->formTextarea($ProfileForm->get('personal_summary')); ?>
+															<p class="help-block">You have <span id="ProfileFormPersonalSummaryFieldCounter"></span> characters left.</p>
+														</div>
+													</dd>
+					</dl>
+
+				<h3>How can we get to know you better?</h3>
+					<dl class="dl-horizontal font-16" style="margin-bottom: 40px;">
+						<dt>Website URL</dt> 		<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('website')); ?></dd>
+						<dt>LinkedIn URL</dt> 		<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('linkedin')); ?></dd>
+						<dt>Google+ URL</dt> 		<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('google_plus')); ?></dd>
+						<dt>Twitter URL</dt> 		<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('twitter')); ?></dd>
+						<dt>Facebook URL</dt> 		<dd class="modalDDtag"><?php echo $this->formInput($ProfileForm->get('facebook')); ?></dd>
+					</dl>
+
+		  		<?php
+					echo $this->form()->closeTag($ProfileForm);
+				?>
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  		<button type="button" class="btn btn-primary" id="ProfileFormSubmitButton">Save changes</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+<!-- /Profile Config MODAL FORM-->
+
+<!-- Profile Pic Config MODAL FORM-->
+<div class="modal fade" id="ProfilePicConfig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		  		<h4 class="modal-title"><i class="fa fa-picture-o"></i> Update Profile Pic</h4>
+			</div>
+			<div class="modal-body">
+		  		Here goes Profile pic setting content. one picture, must be square
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  		<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+<!-- /Profile Config MODAL FORM-->
+
+<!-- Contact Config MODAL FORM-->
+<div class="modal fade" id="ContactBoxConfig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		  		<h4 class="modal-title"><i class="fa fa-list-alt fa-fw"></i> Edit Contact Information</h4>
+			</div>
+			<div class="modal-body">
+		  		Here goes Contact box setting content.
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  		<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+<!-- /Contact Config MODAL FORM-->
+
+<!-- Commission Config MODAL FORM-->
+<div class="modal fade" id="CommissionBoxConfig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		  		<h4 class="modal-title"><i class="fa fa-bookmark fa-fw"></i> Edit Commission</h4>
+			</div>
+			<div class="modal-body">
+		  		Here goes Commission box setting content.
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  		<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+<!-- /Commission Config MODAL FORM-->
+
+<!-- Certifications Config MODAL FORM-->
+<div class="modal fade" id="CertificationsBoxConfig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		  		<h4 class="modal-title"><i class="fa fa-certificate fa-fw"></i> Edit Certifications</h4>
+			</div>
+			<div class="modal-body">
+		  		Here goes Certifications box setting content.
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  		<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+<!-- /Certifications Config MODAL FORM-->
+
+<!-- Affiliations Config MODAL FORM-->
+<div class="modal fade" id="AffiliationsBoxConfig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		  		<h4 class="modal-title"><i class="fa fa-tags fa-fw"></i> Edit Affiliations</h4>
+			</div>
+			<div class="modal-body">
+		  		Here goes Affiliations box setting content.
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  		<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+<!-- /Affiliations Config MODAL FORM-->
+
+<!-- Capabilities Config MODAL FORM-->
+<div class="modal fade" id="CapabilitiesBoxConfig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		  		<h4 class="modal-title"><i class="fa fa-star fa-fw"></i> Edit Capabilities</h4>
+			</div>
+			<div class="modal-body">
+		  		Here goes Capabilities box setting content.
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  		<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+<!-- /Capabilities Config MODAL FORM-->
+
+<!-- Experience Config MODAL FORM-->
+<div class="modal fade" id="ExperienceBoxConfig" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  	<div class="modal-content">
+			<div class="modal-header">
+		  		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		  		<h4 class="modal-title"><i class="fa fa-check-circle fa-fw"></i> Edit Experience</h4>
+			</div>
+			<div class="modal-body">
+		  		Here goes Experience box setting content.
+			</div>
+			<div class="modal-footer">
+		  		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  		<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+	  	</div>
+	</div>
+</div>
+<!-- /Experience Config MODAL FORM-->
+
+
+
+
+
+<div class="container">
+	<div class="row">
+		<div id="content" class="col-lg-12">
+			<!-- PAGE HEADER-->
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="page-header">
+						<div class="clearfix">
+							<h3 class="content-title pull-left">Your Profile</h3>
+						</div>
+						<div class="description">Your Profile, Skills, Experience and other information</div>
+					</div>
+				</div>
+			</div>
+			<!-- /PAGE HEADER -->
+
+
+
+			<!-- USER PROFILE -->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BOX -->
+					<div class="box border blue">
+						<div class="box-title">
+							<h4><i class="fa fa-user"></i><span class="hidden-inline-mobile">Hello, <?php echo $this->notaryFirstName ?>!</span></h4>
+						</div>
+						<div class="box-body">
+
+							<div class="row">
+
+								<div class="col-md-3">
+									<div class="list-group">
+										<li class="list-group-item zero-padding">
+											<a href="#ProfilePicConfig" data-toggle="modal" class="config">
+												<img alt="" class="img-responsive" src="<?php echo $this->notaryLargeProfilePicUrl; ?>">
+											</a>
+										</li>
+										<div class="list-group-item profile-details">
+											<h2><?php echo $this->notaryFullName ?></h2>
+											<p><i class="fa fa-circle text-green"></i> Online</p>
+											<p class="font-15">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore magna aliquam tincidunt erat volutpat laoreet dolore magna aliquam tincidunt erat volutpat.</p>
+											<p class="font-15"><a href="#">www.jenniferblogs.com</a></p>
+											<ul class="list-inline">
+												<li><i class="fa fa-linkedin fa-2x"></i></li>
+												<li><i class="fa fa-google-plus fa-2x"></i></li>
+												<li><i class="fa fa-twitter fa-2x"></i></li>
+												<li><i class="fa fa-facebook fa-2x"></i></li>
+											</ul>
+										</div>
+										<a id="ProfileBoxLink" 			href="#" class="list-group-item userProfileLink active"><i class="fa fa-user fa-fw"></i> Profile</a>
+										<a id="ContactBoxLink" 			href="#" class="list-group-item userProfileLink"><i class="fa fa-list-alt fa-fw"></i> Contact Information</a>
+										<a id="CommissionBoxLink" 		href="#" class="list-group-item userProfileLink"><i class="fa fa-bookmark fa-fw"></i> Commission</a>
+										<a id="CertificationsBoxLink" 	href="#" class="list-group-item userProfileLink"><i class="fa fa-certificate fa-fw"></i> Certifications</a>
+										<a id="AffiliationsBoxLink" 	href="#" class="list-group-item userProfileLink"><i class="fa fa-tags fa-fw"></i> Affiliations</a>
+										<a id="CapabilitiesBoxLink" 	href="#" class="list-group-item userProfileLink"><i class="fa fa-star fa-fw"></i> Capabilities</a>
+										<a id="ExperienceBoxLink" 		href="#" class="list-group-item userProfileLink"><i class="fa fa-check-circle fa-fw"></i> Experience</a>
+									</div>
+								</div>
+
+								<div class="col-md-9 box-container">
+
+									<!-- PROFILE BOX -->
+									<div id="ProfileBoxContent" class="box userProfileContent">
+										<div class="box-title">
+											<h4><i class="fa fa-user"></i>Profile</h4>
+											<div class="tools">
+												<a href="#ProfilePicConfig" data-toggle="modal" class="config tip" title="" data-original-title="Change your Profile Pic">
+													<i class="fa fa-picture-o fa-2x"></i>
+												</a>
+												<a href="#ProfileBoxConfig" data-toggle="modal" class="config tip" title="" data-original-title="Update Your Profile">
+													<i class="fa fa-cog fa-2x"></i>
+												</a>
+											</div>
+										</div>
+										<div class="box-body">
+											<div class="well well-lg">
+												<h3>What do you want to be called?</h3>
+												<dl class="dl-horizontal font-16" style="margin-bottom: 40px;">
+													<dt>Prefix</dt>				<dd><?php echo $this->notaryNamePrefix; ?></dd>
+													<dt>First Name</dt>			<dd><?php echo $this->notaryFirstName; ?></dd>
+													<dt>1st Middle Name</dt>	<dd><?php echo $this->notaryMidName; ?></dd>
+													<dt>2nd Middle Name</dt>	<dd><?php echo $this->notaryMidName; ?></dd>
+													<dt>Last Name</dt>			<dd><?php echo $this->notaryLastName; ?></dd>
+													<dt>Display Name</dt>		<dd><?php echo $this->notaryDisplayName; ?></dd>
+													<dt>Suffix</dt>				<dd><?php echo $this->notaryNameSuffix; ?></dd>
+												</dl>
+
+												<h3>Are you an adult?</h3>
+												<dl class="dl-horizontal font-16" style="margin-bottom: 40px;">
+													<dt>Birth Date</dt>			<dd><?php echo $this->notaryBirthDate; ?></dd>
+													<dt>Gender</dt>				<dd><?php echo $this->notaryGender; ?></dd>
+												</dl>
+
+											<h3>Tell us about yourself.</h3>
+												<dl class="dl-horizontal font-16" style="margin-bottom: 40px;">
+											  		<dt>Personal Summary</dt>	<dd><?php echo $this->notaryPersonalSummary; ?></dd>
+										   		</dl>
+
+											<h3>How can we get to know you better?</h3>
+												<dl class="dl-horizontal font-16" style="margin-bottom: 40px;">
+											  		<dt>Website URL</dt> 			<dd><?php echo $this->notaryPersonalWebsiteLink; ?></dd>
+											  		<dt>LinkedIn URL</dt> 			<dd><?php echo $this->notarySocialLinkLinkedIn; ?></dd>
+											  		<dt>Google+ URL</dt> 			<dd><?php echo $this->notarySocialLinkGooglePlus; ?></dd>
+											  		<dt>Twitter URL</dt> 			<dd><?php echo $this->notarySocialLinkTwitter; ?></dd>
+											  		<dt>Facebook URL</dt> 			<dd><?php echo $this->notarySocialLinkFacebook; ?></dd>
+										   		</dl>
+											</div>
+										</div>
+									</div>
+									<!-- /PROFILE BOX -->
+
+									<!-- CONTACT INFO BOX -->
+									<div id="ContactBoxContent" class="box userProfileContent hidden">
+										<div class="box-title">
+											<h4><i class="fa fa-list-alt"></i>Contact Information</h4>
+											<div class="tools">
+												<a href="#ContactBoxConfig" data-toggle="modal" class="config tip" title="" data-original-title="Update Your Contact Information">
+													<i class="fa fa-cog fa-2x"></i>
+												</a>
+											</div>
+										</div>
+										<div class="box-body">
+											<div  class="scroller" data-height="600px">
+												add a map for location and cool picture uploader.
+											</div>
+										</div>
+									</div>
+									<!-- /CONTACT INFO BOX -->
+
+									<!-- COMMISSION BOX -->
+									<div id="CommissionBoxContent" class="box userProfileContent hidden">
+										<div class="box-title">
+											<h4><i class="fa fa-bookmark"></i>Commission</h4>
+											<div class="tools">
+												<a href="#CommissionBoxConfig" data-toggle="modal" class="config tip" title="" data-original-title="Update Your Commission Information">
+													<i class="fa fa-cog fa-2x"></i>
+												</a>
+											</div>
+										</div>
+										<div class="box-body">
+											<div  class="scroller" data-height="600px">
+												Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+												Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula,
+												eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+											</div>
+										</div>
+									</div>
+									<!-- /COMMISSION BOX -->
+
+									<!-- CERTIFICATIONS BOX -->
+									<div id="CertificationsBoxContent" class="box userProfileContent hidden">
+										<div class="box-title">
+											<h4><i class="fa fa-certificate"></i>Certifications</h4>
+											<div class="tools">
+												<a href="#CertificationsBoxConfig" data-toggle="modal" class="config tip" title="" data-original-title="Update Your Certifications">
+													<i class="fa fa-cog fa-2x"></i>
+												</a>
+											</div>
+										</div>
+										<div class="box-body">
+											<div  class="scroller" data-height="600px">
+												Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+												Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula,
+												eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+											</div>
+										</div>
+									</div>
+									<!-- /CERTIFICATIONS BOX -->
+
+									<!-- Affiliations BOX -->
+									<div id="AffiliationsBoxContent" class="box userProfileContent hidden">
+										<div class="box-title">
+											<h4><i class="fa fa-tags"></i>Affiliations</h4>
+											<div class="tools">
+												<a href="#AffiliationsBoxConfig" data-toggle="modal" class="config tip" title="" data-original-title="Update Your Affiliations">
+													<i class="fa fa-cog fa-2x"></i>
+												</a>
+											</div>
+										</div>
+										<div class="box-body">
+											<div  class="scroller" data-height="600px">
+												Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+												Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula,
+												eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+											</div>
+										</div>
+									</div>
+									<!-- /Affiliations BOX -->
+
+									<!-- Capabilities BOX -->
+									<div id="CapabilitiesBoxContent" class="box userProfileContent hidden">
+										<div class="box-title">
+											<h4><i class="fa fa-star"></i>Capabilities</h4>
+											<div class="tools">
+												<a href="#CapabilitiesBoxConfig" data-toggle="modal" class="config tip" title="" data-original-title="Update Your Capabilities">
+													<i class="fa fa-cog fa-2x"></i>
+												</a>
+											</div>
+										</div>
+										<div class="box-body">
+											<div  class="scroller" data-height="600px">
+												Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+												Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula,
+												eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+											</div>
+										</div>
+									</div>
+									<!-- /Capabilities BOX -->
+
+									<!-- Experience BOX -->
+									<div id="ExperienceBoxContent" class="box userProfileContent hidden">
+										<div class="box-title">
+											<h4><i class="fa fa-check-circle"></i>Experience</h4>
+											<div class="tools">
+												<a href="#ExperienceBoxConfig" data-toggle="modal" class="config tip" title="" data-original-title="Update Your Experience">
+													<i class="fa fa-cog fa-2x"></i>
+												</a>
+											</div>
+										</div>
+										<div class="box-body">
+											<div  class="scroller" data-height="600px">
+												Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+												Cras mattis consectetur purus sit amet fermentum. est non commodo luctus, nisi erat porttitor ligula,
+												eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
+											</div>
+										</div>
+									</div>
+									<!-- /Experience BOX -->
+
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /USER PROFILE -->
+
+			<div class="footer-tools">
+				<span class="go-top">
+					<i class="fa fa-chevron-up"></i> Top
+				</span>
+			</div>
+		</div><!-- /CONTENT-->
+	</div>
+	</div>

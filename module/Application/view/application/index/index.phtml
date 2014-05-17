@@ -1,44 +1,366 @@
-<div class="jumbotron">
-    <h1><?php echo sprintf($this->translate('Welcome to %sZend Framework 2%s'), '<span class="zf-green">', '</span>') ?></h1>
-    <p><?php echo sprintf($this->translate('Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2.'), '<a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">', '</a>', \Zend\Version\Version::VERSION) ?></p>
-    <p><a class="btn btn-success btn-lg" href="https://github.com/zendframework/zf2" target="_blank"><?php echo $this->translate('Fork Zend Framework 2 on GitHub') ?> &raquo;</a></p>
-</div>
+<?php
 
-<div class="row">
+?>
+<div class="slider">
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Follow Development') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!'), '<a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">', '</a>', '<a href="http://framework.zend.com/zf2/blog">', '</a>', '<a href="https://github.com/zendframework/zf2/issues">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://framework.zend.com/zf2" target="_blank"><?php echo $this->translate('ZF2 Development Portal') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
+    <div id="layerslider-container">
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Discover Modules') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
+        <div id="layerslider" style="width: 100%; height: 400px;">
 
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Help &amp; Support') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We\'d love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s.'), '<a href="irc://irc.freenode.net/zftalk">', '</a>', '<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://webchat.freenode.net?channels=zftalk" target="_blank"><?php echo $this->translate('Ping us on IRC') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
-</div>
+            <div class="ls-layer" style="slidedirection: top; slidedelay: 8500;">
+
+                <img class="ls-s2" style="top: 0; left: 0; durationin: 0; durationout: 0;" src="<?php echo $this->basePath(); ?>/application/images/sliders/layerslider/business_focus.jpg">
+
+                <!--
+
+                <h2 class="ls-s2 inline-other-h5" style="top: 235px; left: 380px; slidedirection: bottom; slideoutdirection: bottom; durationin: 1500; durationout: 400; delayin: 700; easingin : easeOutExpo;">
+                    Our learning management system can...
+                </h2>
+                <h2 class="ls-s3 inline-h2 inline-h4" style="top: 280px; left: 390px; slidedirection: bottom; slideoutdirection: bottom; durationin: 1500; durationout: 400; delayin: 1500; easingin : easeOutExpo;">
+                    make your school global
+                </h2>
+                <h2 class="ls-s3 inline-h2 inline-h4" style="top: 320px; left: 390px; slidedirection: bottom; slideoutdirection: bottom; durationin: 1500; durationout: 400; delayin: 2000; easingin : easeOutExpo;">
+                    keep your work local
+                </h2>
+                <h2 class="ls-s3 inline-h2 inline-h4" style="top: 360px; left: 390px; slidedirection: bottom; slideoutdirection: bottom; durationin: 1500; durationout: 400; delayin: 2500; easingin : easeOutExpo;">
+                    and make your teachers, students and parents friendlier!
+                </h2>
+
+                <h3 id="homepage-GeneralIntroSlide-LearnMoreBtn" class="ls-s3 inline-btn inline-btn-blue" style="top: 160px; left: 170px; slidedirection: bottom; slideoutdirection: bottom; durationin: 1500; durationout: 400; delayin: 3500; easingin : easeOutExpo;">
+                    Learn More
+                </h3>
+                <h3 id="homepage-GeneralIntroSlide-SignUpBtn" class="ls-s3 inline-btn inline-btn-orange" style="top: 160px; left: 320px; slidedirection: bottom; slideoutdirection: bottom; durationin: 1500; durationout: 400; delayin: 3500; easingin : easeOutExpo;">
+                    sign up
+                </h3>
+
+                -->
+
+            </div><!--/ .ls-layer-->
+
+
+            <div class="ls-layer" style="slidedirection: bottom; slidedelay: 8500;">
+
+                <img class="ls-s2" style="top: 0; left: 0; durationin: 0; durationout: 0;" src="<?php echo $this->basePath(); ?>/application/images/sliders/layerslider/more_websites.jpg">
+
+
+                <!--
+                <h1 class="ls-s1 inline-h1" style="top: 220px; left: 618px; durationin: 1500; durationout: 1200; slidedirection: right; slideoutdirection: bottom; easingin : easeOutExpo; delayin : 2500;">Just Feel It!</h1>
+
+                <h3 class="ls-s5 inline-h3" style="top: 204px; left: 215px; durationin: 1500; slidedirection: bottom; slideoutdirection: bottom; easingin : easeOutExpo;">Premium HTML5 Template</h3>
+                <h2 class="ls-s6 inline-h2" style="top: 174px; left: 618px; durationout: 800; slidedirection: top; slideoutdirection: bottom; durationin : 1000; easingin : easeOutExpo; delayin : 1850;">You Enjoy Your Life</h2>
+                <h2 class="ls-s6 inline-h2" style="top: 141px; left: 618px;  durationout: 800;slidedirection: top; slideoutdirection: bottom; durationin : 1300; easingin : easeOutExpo; delayin : 1850;">Here is Everything to Make </h2>
+
+
+                -->
+            </div><!--/ .ls-layer-->
+
+            <div class="ls-layer" style="slidedirection: top; slidedelay: 8500;">
+
+                <img class="ls-s2" style="top: 0; left: 0; durationin: 0; durationout: 0;" src="<?php echo $this->basePath(); ?>/application/images/sliders/layerslider/custom_resources.jpg">
+
+                <!--
+                <h2 class="ls-s3 inline-other-h2" style="top: 112px; left: 28px; durationin : 1500; slidedirection: top; slideoutdirection : top; delayin : 1100; ">The Smartest and Powerful</h2>
+                <h1 class="ls-s3 inline-h1" style="top: 140px; left: 28px; durationin : 1500; slidedirection: top; slideoutdirection : top; delayin : 800; ">LayerSlider</h1>
+
+                <h2 class="ls-s2 inline-h2" style="top: 210px; left: 28px; slidedirection: bottom; slideoutdirection : bottom; durationin : 1500; durationout : 700; delayin : 1200;  easingin : easeOutExpo;">Working by Reading Your Minds,</h2>
+                <h2 class="ls-s3 inline-h2" style="top: 243px; left: 28px; slidedirection: bottom; slideoutdirection : bottom; durationin : 1100; durationout : 1100; delayin : 1500; easingin : easeOutExpo;">Feeling Your Emotions</h2>
+                <h2 class="ls-s4 inline-h2" style="top: 276px; left: 28px; slidedirection: bottom; slideoutdirection : bottom; durationin : 700; durationout : 700; delayin :  1800;  easingin : easeOutExpo;">and Releasing Your Imagination</h2>
+
+                <img class="ls-s4" style="top: 95px; left: 430px; durationin : 1500; durationout: 1000; slidedirection : left; slideoutdirection : left; " src="application/images/sliders/layerslider/device_horizontal.png">
+                <img class="ls-s4" style="top: 25px; left: 630px; durationin : 1500; durationout: 1000; slidedirection : right; slideoutdirection : right; " src="application/images/sliders/layerslider/device_vertical.png">
+
+
+                -->
+            </div><!--/ .ls-layer-->
+
+            <div class="ls-layer" style="slidedirection: left; slidedelay: 8500; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+
+                <img class="ls-s2" style="top: 0; left: 0; durationin: 0; durationout: 0;" src="<?php echo $this->basePath(); ?>/application/images/sliders/layerslider/more_features.jpg">
+
+                <!--
+                <div  class="ls-s3" style="top:78px; left: 130px; slidedirection : left; slideoutdirection : left; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;">
+                    <div class="video-holder">
+                        <iframe src="http://player.vimeo.com/video/10112073" width="318" height="228" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                </div>
+
+                <h2 class="ls-s3 inline-h2" style="top: 125px; left: 585px; slidedirection: top; slideoutdirection: right; durationin: 1500; durationout: 800; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 800;">You Can Add Any Video</h2>
+                <h2 class="ls-s3 inline-h2" style="top: 160px; left: 585px; slidedirection: top; slideoutdirection: right; durationin: 1400; durationout: 800;  easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 500; delayout : 150;">to Your Slides</h2>
+
+                <h1 class="ls-s3 inline-h1" style="top: 216px; left: 585px; slidedirection: bottom; slideoutdirection: right; durationin: 1500; durationout: 1500; easinging: easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;">It's so Easy!</h1>
+
+
+                -->
+            </div><!--/ .ls-layer-->
+
+            <div class="ls-layer" style="slidedirection: left; slidedelay: 8500; durationin: 1500; durationout: 1500; easingin: easeInOutQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">
+
+                <img class="ls-s2" style="top: 0; left: 0; durationin: 0; durationout: 0;" src="<?php echo $this->basePath(); ?>/application/images/sliders/layerslider/improved_accounting.jpg">
+
+                <!--
+                <div  class="ls-s3" style="top:78px; left: 130px; slidedirection : left; slideoutdirection : left; durationin : 1500; durationout : 1500; easingin : easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;">
+                    <div class="video-holder">
+                        <iframe src="http://player.vimeo.com/video/10112073" width="318" height="228" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                </div>
+
+                <h2 class="ls-s3 inline-h2" style="top: 125px; left: 585px; slidedirection: top; slideoutdirection: right; durationin: 1500; durationout: 800; easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 800;">You Can Add Any Video</h2>
+                <h2 class="ls-s3 inline-h2" style="top: 160px; left: 585px; slidedirection: top; slideoutdirection: right; durationin: 1400; durationout: 800;  easingin : easeOutExpo; easingout : easeInOutQuint; delayin : 500; delayout : 150;">to Your Slides</h2>
+
+                <h1 class="ls-s3 inline-h1" style="top: 216px; left: 585px; slidedirection: bottom; slideoutdirection: right; durationin: 1500; durationout: 1500; easinging: easeInOutQuint; easingout : easeInOutQuint; delayin : 0; delayout : 0;">It's so Easy!</h1>
+
+
+                -->
+            </div><!--/ .ls-layer-->
+
+        </div><!--/ #layerslider-->
+
+    </div><!--/ #layerslider-container-->
+
+</div><!--/ .slider-->
+
+
+<section id="content">
+
+    <div class="container">
+
+        <h2 class="slogan">
+            Nomsterz is cloud based software for loan signing mobile notaries.<br> <br>
+            Our business suite helps loan signing notaries perform day to day tasks, big and small, and interact with signing agencies &amp; lenders.<br>
+            Nomsterz is Simple to Use, Beautiful to Behold, Functional and Affordable.
+        </h2>
+
+        <div class="detail-holder clearfix">
+
+            <div id="homepage-Energetic-InfoBtn"        class="five columns cursorOn">
+
+                <div class="detail-box">
+
+                    <div class="detail-entry">
+
+                        <i class="detail-icon icons-electricity"></i>
+
+                        <h5>Energize Your Business</h5>
+
+                        <p>
+                            You are ambitious and ready to achieve success.
+                            <br> <br>
+                            Our business suite gives you The Right tools, at The Right price, The Right way.
+                            <br>
+                            Nomsterz gives you a network of helping hands, clear tips & tutorials, fair rankings & reviews and much more.
+                            <br>
+                            <div style="position: relative;">
+                                <div style="float: left; position: absolute;left: 0px;">
+                                    <a id="homepage-Energetic-InfoBox-LearnMoreBtn" class="button medium green">MORE</a>
+                                </div>
+                                <div style="float: left; position: absolute;right: 0px;">
+                                    <a id="homepage-Energetic-InfoBox-SignUpBtn" class="button medium green">SIGNUP</a>
+                                </div>
+                            </div>
+                            <br>
+                        </p>
+
+                    </div><!--/ .detail-entry-->
+
+                    <div data-color-state="#80BE00" data-color-hover="" class="transform"></div>
+
+                </div><!--/ .detail-box-->
+
+            </div><!--/ .columns-->
+
+            <div id="homepage-Bold-InfoBtn"             class="six columns cursorOn">
+
+                <div class="detail-box">
+
+                    <div class="detail-entry">
+
+                        <i class="detail-icon icons-screwdriver"></i>
+
+                        <h5>Upgrade the Skills You Offer</h5>
+
+                        <p>
+                            Accomplished notaries join us because they are ready to upgrade the skills they can offer.
+                            <br> <br>
+                            We know your business runs on Spreadsheets, Social Networks, Desktop &amp; Mobile Apps.
+                            <br>
+                            Nomsterz gives you a tech upgrade that is simple to use, responsive to your needs and frees you to perform while your business runs smoothly.
+                            <br>
+                            <div style="position: relative;">
+                                <div style="float: left; position: absolute;left: 0px;">
+                                    <a id="homepage-Bold-InfoBox-LearnMoreBtn" class="button medium vinous">MORE</a>
+                                </div>
+                                <div style="float: left; position: absolute;right: 0px;">
+                                    <a id="homepage-Bold-InfoBox-SignUpBtn" class="button medium vinous">SIGNUP</a>
+                                </div>
+                            </div>
+                            <br>
+                        </p>
+
+                    </div><!--/ .detail-entry-->
+
+                    <div data-color-state="#EE82EE" data-color-hover="" class="transform"></div>
+
+                </div><!--/ .detail-box-->
+
+            </div><!--/ .columns-->
+
+            <div id="homepage-Professional-InfoBtn"     class="five columns cursorOn">
+
+                <div class="detail-box">
+
+                    <div class="detail-entry">
+
+                        <i class="detail-icon icons-book"></i>
+
+                        <h5>Showcase Your Experience</h5>
+
+                        <p>
+                            Your list of clients and references proves your success.
+                            <br> <br>
+                            Our site displays your Reputation, Reviews, and Experience using 30+ easy to use Website templates.
+                            <br>
+                            Nomsterz is a secure, intelligent choice giving you added value and much more.
+                            <br>
+                            <div style="position: relative;">
+                                <div style="float: left; position: absolute;left: 0px;">
+                                    <a id="homepage-Professional-InfoBox-LearnMoreBtn" class="button medium blue">MORE</a>
+                                </div>
+                                <div style="float: left; position: absolute;right: 0px;">
+                                    <a id="homepage-Professional-InfoBox-SignUpBtn" class="button medium blue">SIGNUP</a>
+                                </div>
+                            </div>
+                            <br>
+                        </p>
+
+                    </div><!--/ .detail-entry-->
+
+                    <div data-color-state="#2d5c88" data-color-hover="" class="transform"></div>
+
+                </div><!--/ .detail-box-->
+
+            </div><!--/ .columns-->
+
+        </div><!--/ .detail-holder-->
+
+        <div class="divider-solid"></div>
+
+            <div class="one-third column">
+
+                <h4 class="title-service">
+                    <i class="icons-monitor"></i>
+                    <a href="#">Website Design</a>
+                </h4>
+
+                <p>
+                    Our customizable notary websites come with dozens of modern designs for every loan signer need at no financial cost. Simply, browse our templates, check the components you want, and set your domain name!
+                </p>
+
+				<div id="homepage--LearnMoreBtn" class="button small blue">Learn More</div>
+                <div id="homepage-FreeToStart-LearnMoreBtn" class="button small orange">FREE SIGNUP</div>
+                <br>
+
+                <br />
+
+                <h4 class="title-service">
+                    <i class="icons-lightbulb"></i>
+                    <a href="#">Good Ideas</a>
+                </h4>
+
+                <p>
+                    Nomsterz brings the best ideas in the business to your fingertips, especially your ideas. We maintain the flexibility to incorporate
+                    new technologies and custom requests.
+                </p>
+
+				<div id="homepage-GoodIdeas-LearnMoreBtn" class="button small blue">Learn More</div>
+                <div id="homepage-FreeToStart-LearnMoreBtn" class="button small orange">FREE SIGNUP</div>
+                <br>
+
+            </div><!--/ .column-->
+
+            <div class="one-third column">
+
+                <h4 class="title-service">
+                    <i class="icons-shuffle"></i>
+                    <a href="#">Multi platform</a>
+                </h4>
+
+                <p>
+                    Nomsterz is designed for ALL platforms: desktop, tablet and mobile and is compatible across all devices.
+                    We let you access our features at anytime in anyplace. Your information follows YOU.
+                </p>
+
+				<div id="homepage-MultiPlatform-LearnMoreBtn" class="button small blue">Learn More</div>
+                <div id="homepage-FreeToStart-LearnMoreBtn" class="button small orange">FREE SIGNUP</div>
+                <br>
+
+                <br />
+
+                <h4 class="title-service">
+                    <i class="icons-alarm-clock"></i>
+                    <a href="#">Planning</a>
+                </h4>
+
+                <p> All users have an array of planning &amp organizational tools to track
+                    activities, progress, work, targets and financials. Features come with easy to follow video tutorial and help docs.
+                </p>
+
+				<div id="homepage-Planning-LearnMoreBtn" class="button small blue">Learn More</div>
+                <div id="homepage-FreeToStart-LearnMoreBtn" class="button small orange">FREE SIGNUP</div>
+                <br>
+
+            </div><!--/ .column -->
+
+            <div class="one-third column">
+
+                <h4 class="title-service">
+                    <i class="icons-thumbs-up"></i>
+                    <a href="#">Easy to Customize</a>
+                </h4>
+
+                <p>
+                    Adding features to your account is as easy as ticking checkboxes. And for those features that need an extra touch,
+                    Nomsterz, with the right scope, can integrate already existing software or create them from scratch.
+                </p>
+
+				<div id="homepage-EasyToCustomize-LearnMoreBtn" class="button small blue">Learn More</div>
+                <div id="homepage-FreeToStart-LearnMoreBtn" class="button small orange">FREE SIGNUP</div>
+                <br>
+
+                <br />
+
+                <h4 class="title-service">
+                    <i class="icons-earth"></i>
+                    <a href="#">Free to start</a>
+                </h4>
+
+                <p>
+                    We believe that improving the bargaining power, attainable skills and the ability to deliver quality service by a notary makes the profession worthy.
+                    We make it easy to get started, implement and succeed.
+                </p>
+
+				<div id="homepage-FreeToStart-LearnMoreBtn" class="button small blue">Learn More</div>
+                <div id="homepage-FreeToStart-LearnMoreBtn" class="button small orange">FREE SIGNUP</div>
+                <br>
+
+            </div><!--/ .column-->
+
+        <div class="clear"></div>
+
+        <!--
+        <div class="divider-solid"></div>
+
+        <ul class="clients-items clearfix">
+
+            <li><a class="bwWrapper" href="services.html"><img src="<?php echo $this->basePath(); ?>/application/images/clients/client-1.png" alt="" /></a></li>
+            <li><a class="bwWrapper" href="services.html"><img src="<?php echo $this->basePath(); ?>/application/images/clients/client-2.png" alt="" /></a></li>
+            <li><a class="bwWrapper" href="services.html"><img src="<?php echo $this->basePath(); ?>/application/images/clients/client-3.png" alt="" /></a></li>
+            <li><a class="bwWrapper" href="services.html"><img src="<?php echo $this->basePath(); ?>/application/images/clients/client-4.png" alt="" /></a></li>
+            <li><a class="bwWrapper" href="services.html"><img src="<?php echo $this->basePath(); ?>/application/images/clients/client-5.png" alt="" /></a></li>
+
+        </ul><!--/ .clients-items-->
+
+    </div><!--/ .container-->
+
+</section><!--/ #content-->
+
+

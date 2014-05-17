@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
+-- Company                  :   Nomsterz.com
 -- Email                    :   chukkynze@gmail.com
 -- Date                     :   1/7/14 2:17 PM
 -- Description              :   Creates the faq table
--- Database                 :   notrytlz_utils
+-- Database                 :   nomsterz_utils
 -- Table                    :   faq
 -- Undo Script provided     :   2014-01-15--22-17_create-faq-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_utils.faq;
+DROP TABLE IF EXISTS nomsterz_utils.faq;
 
-CREATE TABLE notrytlz_utils.faq
+CREATE TABLE nomsterz_utils.faq
 (
   `id` 						int(16) unsigned NOT NULL AUTO_INCREMENT,
   `category` 			varchar(120)  DEFAULT 'General',

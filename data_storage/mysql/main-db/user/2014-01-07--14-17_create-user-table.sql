@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
+-- Company                  :   Nomsterz.com
 -- Email                    :   chukkynze@gmail.com
 -- Date                     :   1/7/14 2:17 PM
 -- Description              :   Creates the user table
--- Database                 :   notrytlz_db
+-- Database                 :   nomsterz_db
 -- Table                    :   user
 -- Undo Script provided     :   2014-01-07--14-17_create-user-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_db.user;
+DROP TABLE IF EXISTS nomsterz_db.user;
 
-CREATE TABLE notrytlz_db.user
+CREATE TABLE nomsterz_db.user
 (
     id 			    int(16) unsigned NOT NULL AUTO_INCREMENT,
     hash 		    varchar(160) NOT NULL DEFAULT '',

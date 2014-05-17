@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
--- Email                    :   chukkynze@notarytoolz.com
+-- Company                  :   Nomsterz.com
+-- Email                    :   chukkynze@nomsterz.com
 -- Date                     :   2/18/14 12:34 PM
 -- Description              :   List of Benchmarks
--- Database                 :   notrytlz_utils
+-- Database                 :   nomsterz_utils
 -- Table                    :   benchmarks
 -- Undo Script provided     :   2014-02-18--12-35_create-benchmarks-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_utils.benchmarks;
+DROP TABLE IF EXISTS nomsterz_utils.benchmarks;
 
-CREATE TABLE notrytlz_utils.benchmarks
+CREATE TABLE nomsterz_utils.benchmarks
 (
 	id 						int(11) unsigned NOT NULL AUTO_INCREMENT,
   name 					varchar(160) NOT NULL DEFAULT '',
@@ -29,9 +29,9 @@ CREATE TABLE notrytlz_utils.benchmarks
 	COLLATE=utf8_unicode_ci
 ;
 
-desc notrytlz_utils.benchmarks;
+desc nomsterz_utils.benchmarks;
 
-show index in notrytlz_utils.benchmarks;
+show index in nomsterz_utils.benchmarks;
 
 
 COMMIT;

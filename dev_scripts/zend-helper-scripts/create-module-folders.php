@@ -5,11 +5,11 @@
  * @author      Chukky Nze <chukkynze@gmail.com>
  * @since       12/19/13 2:23 AM
  * 
- * @copyright   Copyright (c) 2013 www.NotaryToolz.com
+ * @copyright   Copyright (c) 2013 www.Nomsterz.com
  */
 
 $lineBreak          =   "\n\n";
-$applicationFolder  =   "notrytlz";
+$applicationFolder  =   "nomsterz";
 $moduleName         =   $argv[1];
 
 if(!is_dir("C:/wamp/www/".$applicationFolder."/module/" . $moduleName . "/"))

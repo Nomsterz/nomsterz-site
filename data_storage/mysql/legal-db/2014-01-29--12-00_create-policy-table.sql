@@ -1,6 +1,6 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
--- Email                    :   chukkynze@notarytoolz.com
+-- Company                  :   Nomsterz.com
+-- Email                    :   chukkynze@nomsterz.com
 -- Date                     :   1/29/14 11:59 AM
 -- Description              :   EnterDescriptionHere
 -- Database                 :   EnterDatabaseNamesHere
@@ -9,7 +9,7 @@
 
 START TRANSACTION;
 
-CREATE TABLE notrytlz_legal.policy
+CREATE TABLE nomsterz_legal.policy
 (
   `id` int(16) NOT NULL AUTO_INCREMENT,
   `content_id` int(16) NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE notrytlz_legal.policy
 	COLLATE=utf8_unicode_ci
 ;
 
-CREATE TABLE notrytlz_legal.policy_content
+CREATE TABLE nomsterz_legal.policy_content
 (
   `id` int(16) NOT NULL AUTO_INCREMENT,
   `policy_id` int(16) NOT NULL,

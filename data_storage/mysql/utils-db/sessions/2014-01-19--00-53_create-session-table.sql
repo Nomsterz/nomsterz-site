@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
+-- Company                  :   Nomsterz.com
 -- Email                    :   chukkynze@gmail.com
 -- Date                     :   1/19/14 12:53 AM
 -- Description              :   Creates the session table according to the DBSessionStorage module specifications
--- Database                 :   notrytlz_utils
+-- Database                 :   nomsterz_utils
 -- Table                    :   session
 -- Undo Script provided     :   2014-01-19--00-53_create-session-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_utils.session;
+DROP TABLE IF EXISTS nomsterz_utils.session;
 
-CREATE TABLE IF NOT EXISTS notrytlz_utils.session
+CREATE TABLE IF NOT EXISTS nomsterz_utils.session
 (
     id 				char(32) NOT NULL DEFAULT '',
     name 			char(32) NOT NULL,

@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
+-- Company                  :   Nomsterz.com
 -- Email                    :   chukkynze@gmail.com
 -- Date                     :   1/18/14 11:111 PM
 -- Description              :   Creates the member table
--- Database                 :   notrytlz_db
+-- Database                 :   nomsterz_db
 -- Table                    :   member
 -- Undo Script provided     :   2014-01-18--23-11_create-member-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_db.member;
+DROP TABLE IF EXISTS nomsterz_db.member;
 
-CREATE TABLE notrytlz_db.member
+CREATE TABLE nomsterz_db.member
 (
   id 								int(16) NOT NULL AUTO_INCREMENT,
   member_type 			enum('unknown', 'notary','employee','signing agent','lender', 'client') NOT NULL,

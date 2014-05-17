@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
--- Email                    :   chukkynze@notarytoolz.com
+-- Company                  :   Nomsterz.com
+-- Email                    :   chukkynze@nomsterz.com
 -- Date                     :   1/23/14 9:52 PM
 -- Description              :   EnterDescriptionHere
--- Database                 :   notrytlz_db
+-- Database                 :   nomsterz_db
 -- Table                    :   member_emails
 -- Undo Script provided     :   2014-1-23--21-52_create-member-emails-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_db.member_emails;
+DROP TABLE IF EXISTS nomsterz_db.member_emails;
 
-CREATE TABLE IF NOT EXISTS notrytlz_db.member_emails
+CREATE TABLE IF NOT EXISTS nomsterz_db.member_emails
 (
     id 				        int(16) NOT NULL AUTO_INCREMENT,
   	member_id 				int(16) NOT NULL,

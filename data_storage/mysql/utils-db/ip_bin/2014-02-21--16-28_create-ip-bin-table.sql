@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
--- Email                    :   chukkynze@notarytoolz.com
+-- Company                  :   Nomsterz.com
+-- Email                    :   chukkynze@nomsterz.com
 -- Date                     :   2/21/14 4:28 PM
 -- Description              :   Holds IP Addresses we are "interested" in
--- Database                 :   notrytlz_utils
+-- Database                 :   nomsterz_utils
 -- Table                    :   ip_bin
 -- Undo Script provided     :   2014-02-21--16-28_create-ip-bin-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_utils.ip_bin;
+DROP TABLE IF EXISTS nomsterz_utils.ip_bin;
 
-CREATE TABLE notrytlz_utils.ip_bin
+CREATE TABLE nomsterz_utils.ip_bin
 (
     id 			    int(16) NOT NULL AUTO_INCREMENT,
     user_id 	    int(16) NOT NULL,

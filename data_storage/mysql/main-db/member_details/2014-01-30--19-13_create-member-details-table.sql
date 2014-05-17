@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   notrytlz_db.com
--- Email                    :   chukkynze@notarytoolz.com
+-- Company                  :   nomsterz_db.com
+-- Email                    :   chukkynze@nomsterz.com
 -- Date                     :   1/30/14 7:13 PM
 -- Description              :   EnterDescriptionHere
--- Database                 :   notrytlz_db
+-- Database                 :   nomsterz_db
 -- Table                    :   EnterTableNamesHere
 -- Undo Script provided     :   2014-01-30--19-13_create-member-details-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_db.member_details;
+DROP TABLE IF EXISTS nomsterz_db.member_details;
 
-CREATE TABLE IF NOT EXISTS notrytlz_db.member_details
+CREATE TABLE IF NOT EXISTS nomsterz_db.member_details
 (
     id     					INT(16) PRIMARY KEY NOT NULL AUTO_INCREMENT ,
     member_id               INT(16) NOT NULL,
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS notrytlz_db.member_details
 ;
 
 
-INSERT INTO notrytlz_db.member_details
+INSERT INTO nomsterz_db.member_details
 (id, member_id, prefix, first_name, mid_name1, mid_name2, last_name, suffix, gender, birth_date, zipcode, created, last_updated)
 VALUES
 (1, 1, '', 'Chukwuma', '', '', 'Nze', '', 2, '0000-00-00', '91607', 1395088040, 1395088040);

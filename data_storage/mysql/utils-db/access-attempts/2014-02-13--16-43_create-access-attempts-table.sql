@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
--- Email                    :   chukkynze@notarytoolz.com
+-- Company                  :   Nomsterz.com
+-- Email                    :   chukkynze@nomsterz.com
 -- Date                     :   2/13/14 4:42 PM
 -- Description              :   Create a table to monitor access into the application (login, signup, forgot, etc)
--- Database                 :   notrytlz_utils
+-- Database                 :   nomsterz_utils
 -- Table                    :   access_attempt
 -- Undo Script provided     :   2014-02-13--16-43_create-access-attempts-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_utils.access_attempt;
+DROP TABLE IF EXISTS nomsterz_utils.access_attempt;
 
-CREATE TABLE notrytlz_utils.access_attempt
+CREATE TABLE nomsterz_utils.access_attempt
 (
 	id 					int(11) unsigned NOT NULL AUTO_INCREMENT,
     user_id 			int(16) unsigned DEFAULT 0,
@@ -50,9 +50,9 @@ CREATE TABLE notrytlz_utils.access_attempt
 	COMMENT 'Inserts only'
 ;
 
-desc notrytlz_utils.access_attempt;
+desc nomsterz_utils.access_attempt;
 
-show index in notrytlz_utils.access_attempt;
+show index in nomsterz_utils.access_attempt;
 
 COMMIT;
 

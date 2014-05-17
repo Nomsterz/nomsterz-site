@@ -1,17 +1,17 @@
 -- Author                   :   Chukky Nze
--- Company                  :   NotaryToolz.com
+-- Company                  :   Nomsterz.com
 -- Email                    :   chukkynze@gmail.com
 -- Date                     :   1/6/14 10:17 PM
 -- Description              :   Creates the error table
--- Database                 :   notrytlz_utils
+-- Database                 :   nomsterz_utils
 -- Table                    :   error
 -- Undo Script provided     :   2014-01-06--22-17_create-error-table.undo
 
 START TRANSACTION;
 
-DROP TABLE IF EXISTS notrytlz_utils.error;
+DROP TABLE IF EXISTS nomsterz_utils.error;
 
-CREATE TABLE notrytlz_utils.error
+CREATE TABLE nomsterz_utils.error
 (
 	`id` 								int(11) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` 					int(16) unsigned DEFAULT 0,
@@ -51,9 +51,9 @@ CREATE TABLE notrytlz_utils.error
 	COLLATE=utf8_unicode_ci
 ;
 
-desc notrytlz_utils.error;
+desc nomsterz_utils.error;
 
-show index in notrytlz_utils.error;
+show index in nomsterz_utils.error;
 
 COMMIT;
 

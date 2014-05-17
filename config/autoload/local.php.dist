@@ -25,7 +25,7 @@ return  array
                                                                                     'driver'    =>  'pdo',
                                                                                     'dsn'       =>  'mysql:dbname=nomsterz_db;host=localhost',
                                                                                     'username'  =>  'nomsterz_dba',
-                                                                                    'password'  =>  '~1aDo1q#s}K+',
+                                                                                    'password'  =>  'Q4qWrq_a!.tf;lCR3Z',
                                                                                 ),
 
                                                             /**
@@ -36,7 +36,7 @@ return  array
                                                                                     'driver'    =>  'pdo',
                                                                                     'dsn'       =>  'mysql:dbname=nomsterz_utils;host=localhost',
                                                                                     'username'  =>  'nomsterz_dba',
-                                                                                    'password'  =>  '~1aDo1q#s}K+',
+                                                                                    'password'  =>  'Q4qWrq_a!.tf;lCR3Z',
                                                                                 ),
 
                                                             /**
@@ -47,7 +47,7 @@ return  array
                                                                                     'driver'    =>  'pdo',
                                                                                     'dsn'       =>  'mysql:dbname=nomsterz_legal;host=localhost',
                                                                                     'username'  =>  'nomsterz_dba',
-                                                                                    'password'  =>  '~1aDo1q#s}K+',
+                                                                                    'password'  =>  'Q4qWrq_a!.tf;lCR3Z',
                                                                                 ),
                                                         )
                                     ),

@@ -1,0 +1,104 @@
+<?php echo $this->doctype(); ?>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+    <?php echo $this->headTitle('Nomsterz - Error.')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+	<?php echo $this->headMeta()
+        ->appendName('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no')
+        ->appendHttpEquiv('X-UA-Compatible', 'IE=edge,IE=9,IE=8,chrome=1')
+        ->appendName('description', '')
+        ->appendName('author', '')
+    ?>
+
+	<?php echo $this->headLink
+                    (
+                        array
+                        (
+                            'rel'   =>  'shortcut icon',
+                            'type'  =>  'image/vnd.microsoft.icon',
+                            'href'  =>  $this->basePath() . '/application/images/favicon.ico'
+                        )
+                    )
+                    ->prependStylesheet('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+                    ->prependStylesheet($this->basePath() . '/notary/js/bootstrap-daterangepicker/daterangepicker-bs3.css')
+                    ->prependStylesheet($this->basePath() . '/notary/font-awesome/css/font-awesome.min.css')
+                    ->prependStylesheet($this->basePath() . '/notary/css/cloud-admin.css')
+    ?>
+
+    <?php echo $this->headScript()
+        ->prependFile('http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js'   , 'text/javascript', array('conditional' => 'lt IE 9',))
+        ->prependFile('http://html5shiv.googlecode.com/svn/trunk/html5.js'                          , 'text/javascript', array('conditional' => 'lt IE 9',))
+        ->prependFile($this->basePath() . '/notary/js/flot/excanvas.min.js'                           , 'text/javascript', array('conditional' => 'lt IE 9',))
+    ; ?>
+
+
+
+</head>
+<body id="not-found-bg">
+	<div class="overlay"></div>
+	<!-- PAGE -->
+	<section id="page">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="divide-100"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container">
+				<div class="col-md-12 not-found">
+				   <div class="error">
+					  <?php echo $this->errorTitle; ?>
+				   </div>
+				</div>
+					<br>
+				<div class="col-md-5 not-found">
+				   <div class="content">
+					  <h2><?php echo $this->mainHeading; ?></h2>
+					  <p>
+						  <?php
+						  foreach($this->messageLines as $line)
+						  {
+							  echo $line . "<br>";
+						  }
+						  ?>
+					  </p>
+				   </div>
+				</div>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<a class="btn btn-danger btn-icon input-block-level" href="<?php echo $this->homeLink; ?>">
+					<i class="fa fa-home fa-2x"></i>
+					<div>Go Home</div>
+				</a>
+			</div>
+
+	</section>
+	<!--/PAGE -->
+
+
+	<?php echo $this->headScript()
+		->prependFile($this->basePath() . '/notary/js/script.js'                                                  , 'text/javascript', array())
+		->prependFile($this->basePath() . '/notary/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js'        , 'text/javascript', array())
+		->prependFile($this->basePath() . '/notary/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js'           , 'text/javascript', array())
+		->prependFile($this->basePath() . '/notary/js/bootstrap-daterangepicker/daterangepicker.min.js'           , 'text/javascript', array())
+		->prependFile($this->basePath() . '/notary/js/bootstrap-daterangepicker/moment.min.js'                    , 'text/javascript', array())
+		->prependFile($this->basePath() . '/notary/bootstrap-dist/js/bootstrap.min.js'                            , 'text/javascript', array())
+		->prependFile($this->basePath() . '/notary/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js'  , 'text/javascript', array())
+		->prependFile($this->basePath() . '/notary/js/jquery/jquery-2.0.3.min.js'                                 , 'text/javascript', array())
+    ; ?>
+
+
+	<script>
+		jQuery(document).ready(function() {		
+			App.setPage("widgets_box");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>
+
+
+</body>
+</html>
